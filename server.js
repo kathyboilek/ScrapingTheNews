@@ -38,8 +38,8 @@ db.once('open', function () {
 });
 
 //Require Schemas 
-var Note = require('./models/Note.js');
-var Article = require('./models/Article.js');
+var Comments = require('./models/comments.js');
+var Article = require('./models/articles.js');
 
 //Routes 
 // Set up Handlebar for views
@@ -95,7 +95,7 @@ app.get('/articles', function(req, res){
 
 app.get('/articles/:id', function(req, res){
     Article.findOne({'_id': req.params.id})
-    .populate('note')
+    .populate('comments')
     .exec(function(err, doc){
         if (err){
             console.log(err);
@@ -107,13 +107,13 @@ app.get('/articles/:id', function(req, res){
 
 
 app.post('/articles/:id', function(req, res){
-    var newNote = new Note(req.body);
+    var newComment = new Comment(req.body);
 
-    newNote.save(function(err, doc){
+    newComment.save(function(err, doc){
         if(err){
             console.log(err);
         }else{
-            Article.findOneAndUpdate({'_id': req.params.id}, {'note':doc._id})
+            Article.findOneAndUpdate({'_id': req.params.id}, {'comment':doc._id})
             .exec(function(err, doc){
                 if (err){
                     console.log(err);
