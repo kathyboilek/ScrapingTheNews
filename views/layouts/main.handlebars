@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-		<meta charset="UTF-8">
-		<title>Scrapping the News</title>
-		<!-- Styles -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/assets/css/styles.css">
-		<!-- Scripts -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script src="/assets/js/newsScrapper.js"></script>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
+    <title>Scraping the News That's Fit to Scrape</title>
+    <!-- BOOTSTRAP - Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+	<!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    
+	<!-- BOOTSTRAP - Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+	{{!-- Custom Javascript --}}
+    <script type="text/javascript" src="/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <img src = "/images/goodnews.png" alt="Good News, Inspiring, Positive Stories" class="center-block">
+            <h1 class="text-center text-primary">"Scraping News That's Fit to Scrape"</h1>
+        </div>
+            {{{body}}} 
+
+        <footer>
+        	<h6 class="text-center"><sup>&copy;</sup> 2018 Kathleen Boilek</h6>
+        </footer>
+    </div>
+	
+</body>
+
 </html>
