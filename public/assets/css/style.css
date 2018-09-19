@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .page-header { 
 	border-bottom:none; 
 }
@@ -13,3 +14,4 @@ input:focus {
 textarea {
   width: 100%;
 }
+
