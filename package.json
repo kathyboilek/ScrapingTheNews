@@ -1,38 +1,31 @@
 {
-  "name": "18.1.10_scrape_starter",
+  "name": "scrapingthenews",
   "version": "1.0.0",
-  "description": "A web app that lets users view and leave comments on the latest news",
+  "description": "Scraping the News That's Fit to Scrape",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
-  "author": "Kathleen Boilek",
-  "license": "UCF",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bluebird": "^3.5.2",
-    "body-parser": "^1.18.3",
-    "cheerio": "^0.20.0",
-    "cli": "^1.0.1",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "heroku": "^7.16.0",
-    "logger": "0.0.1",
-    "mongoose": "^5.2.15",
-    "morgan": "^1.9.1",
-    "path": "^0.12.7",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathyboilek/ScrappingTheNews.git"
+    "url": "git+https://github.com/kathyboilek/ScrapingTheNews"
   },
+  "author": "Kathleen Boilek",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kathyboilek/ScrappingTheNews/issues"
+    "url": "https://github.com/kathyboilek/ScrapingTheNews/issues"
   },
-  "homepage": "https://github.com/kathyboilek/ScrappingTheNews#readme"
+  "homepage": "https://github.com/kathyboilek/ScrapingTheNews#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.17",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "request": "^2.79.0"
+  }
 }

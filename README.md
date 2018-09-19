@@ -1,14 +1,21 @@
-# ScrappingTheNews
-A web app that lets users view and leave comments on the latest news
+All The Scraping News
 
-1. Whenever a user visits your site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to your application database. At a minimum, the app should scrape and display the following information for each article:
+Whenever a user visits the site, the app will scrape articles from allthegoodnews.com. 
 
-     * Headline - the title of the article
+The first article will be displayed with an image and summary of the article. The user can click on the read article button to read the complete article which opens in a new tab.
 
-     * Summary - a short summary of the article
+All the comments for the article are displayed with the option to delete each comment by clicking on the X.
 
-     * URL - the url to the original article
+The user has the option to enter their name and comment.
 
-     * Feel free to add more content to your database (photos, bylines, and so on).
+At the beginning of each article the user can navigate thru all articles scrapped by clicking on the prevous and next article buttons.
 
-2. Users should also be able to leave comments on the articles displayed and revisit them later. The comments should be saved to the database as well and associated with their articles. Users should also be able to delete comments left on articles. All stored comments should be visible to every user.
+
+Technology Used.
+
+Express for routing
+Mongodb to store the articles and comments.
+Mongoose is use to build the models for the articles and comments.
+Cheerio is used to scrape the website for articles.
+Body-Parser to extract the name and comment from the site to store in the comments collection.
+Twitter bootstrap to style the site.

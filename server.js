@@ -15,15 +15,6 @@ var port = process.env.PORT || 3000;
 // Database
 require("./config/connection");
 
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
-// Set mongoose to leverage built in JavaScript ES6 Promises
-// Connect to the Mongo DB
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
-
-
 // Use morgan logging
 app.use(logger("dev"));
 
@@ -44,10 +35,10 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/news.js');
 app.use('/',routes);
 
-// //404 Error
-// app.use(function(req, res) {
-// 	res.render('404');
-// });
+//404 Error
+app.use(function(req, res) {
+	res.render('404');
+});
 
 //Port
 app.listen(port, function() {
