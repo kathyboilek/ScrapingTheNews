@@ -16,7 +16,8 @@ var Articles = require("../models/articles");
 var Comments = require("../models/comments");
 
 // Website To Be Scraped
-var url = "http://www.goodnewsnetwork.org/latest-news/";
+// var url = "http://www.goodnewsnetwork.org/latest-news/";
+var url = "https://www.msn.com/en-us/news/good-news";
 
 // Test Route To Verify Scraping Works From Route
 router.get('/test', function(req, res) {
