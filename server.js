@@ -44,10 +44,10 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/news.js');
 app.use('/',routes);
 
-//404 Error
-app.use(function(req, res) {
-	res.render('404');
-});
+// //404 Error
+// app.use(function(req, res) {
+// 	res.render('404');
+// });
 
 //Port
 app.listen(port, function() {
